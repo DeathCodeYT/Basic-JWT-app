@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container" id="login">
+        <form id="mainForm"  class="form">
+            <img src="avatar.png" alt="">
+            <h2>Log In</h2>
+            <div class="inputDetails">
+                <input placeholder=" " type="text"id="username">
+                <label for="username">Username</label>
+            </div>
+            <div class="inputDetails">
+                <input type="password" id="password" placeholder=" ">
+                <label for="password">Password</label>
+            </div>
+            <button type="submit" class="submit-btn">submit</button>
+            <!-- <a class="link" href="Registration.html">Don't have account?</a> -->
+            <div id="formAlert" class="form-alert"></div>
+        </form>
+        <div class="formType">
+            <p class="absent" style="text-align:center ;" id="tokenStatus">Token Absent</p>
+            <h2>Dashboard</h2>
+            <p style="margin-top: 20px;margin-bottom: 20px;" id="apiResponse"> </p>
+            <button id="get-btn" class="get-btn">Get Your Lucky Number</button>
+        </div>
+    </div>
+</body>
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+<script src="script.js"></script>
+
+</html>
